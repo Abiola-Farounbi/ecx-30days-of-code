@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Counter App</title>
+</head>
+<body>
+   <div class="container">
+       <div class="card">
+           <h1 class="name"> Counter App </h1>
+           <div id="display"></div>
+           <button id='lower'>Lower Count</button>
+           <button id='add'>Add Count</button>
+       </div>
+   </div>
+<script>
+    var display=document.getElementById("display");
+    var add=document.getElementById("add");
+    var lower=document.getElementById('lower');
+
+    var count=0;
+    add.addEventListener("click",adding);
+    function adding(e){
+        count+=1
+        display.innerHTML=`${count}`;
+        if(count > 0){
+        display.className="green"
+        }
+        e.preventDefault();
+    }
+    lower.addEventListener("click",reduce);
+    function reduce(e){
+        count-=1
+        display.innerHTML=`${count}`;
+        if(count < 0){
+        display.className="red"
+        }
+        e.preventDefault();
+    }
+</script>
+</body>
+</html>

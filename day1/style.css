@@ -1,0 +1,41 @@
+.container{
+    display:flex;
+    justify-content: center;
+    width:500px;
+    height:500px;
+    background-color:#e6adad1c;
+    padding:10px;
+    margin: 0px auto;
+}
+.name{
+    font-size:40px;
+}
+#display{
+    width: 100%;
+    height: 30px;
+    background-color: #060606;
+    margin: 54px 0px;
+    text-align: center;
+    color: lightcyan;
+    padding-top:10px ;
+    font-size: 18px;
+}
+.red{
+    background-color:darkred !important;
+}
+.green{
+    background-color:darkgreen !important;
+}
+#add{
+    border-radius: 5px;
+    background-color:black;
+    padding: 10px;
+    color: white;
+
+}
+#lower{
+    border-radius: 5px;
+    background-color:black;
+    color: white;
+    padding: 10px;
+}
