@@ -1,0 +1,52 @@
+body{
+    background-color: #130a0a;
+}
+.container{
+    margin-top: 10px;
+    padding: 30px;
+
+}
+.content{
+    display: block;
+    color:aliceblue;
+    margin: 15px;
+    font-size: medium;
+    font-weight: 400;
+}
+.heading{
+    line-height: 10px;
+    color:lime;
+}
+#formId{
+    margin:10px;
+    padding: 10px;
+    color:aliceblue;
+}
+#formId input{
+    width:35%;
+    padding: 7px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.submit{
+    display: block;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: white;
+    
+}
+.reload{
+    display: block;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+#result{
+    display: block;
+    color:lime;
+    font-style: italic;
+    margin: 15px;
+    font-size: medium;
+    font-weight: 500;
+
+}
