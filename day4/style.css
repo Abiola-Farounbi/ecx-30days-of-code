@@ -1,0 +1,61 @@
+
+.container{
+    
+    /* display: flex;
+
+    justify-content: center; */
+    
+    width: 75%;
+    
+    height: 300px;
+    
+    background-color: #c7dcee;
+    
+    padding: 10px;
+    
+    margin: 100px auto;
+    
+    box-shadow: 2px 2px 4px black, 2px 2px 4px #0f0e0e;
+    
+    border-radius: 15px;
+
+  
+}
+#word{
+    color:#050344;
+    width:100%;
+    text-align: center;
+    font-family: 'Arima Madurai',cursive;
+    font-size: 30px;
+    font-style: italic;
+    padding-top:10px;
+}
+#author{
+    color:#050344;
+    width:100%;
+    text-align: center;
+    font-family: 'Arima Madurai',cursive;
+    margin-left: 35px;
+    font-size: 20px;
+}
+.tweet{
+    margin-top:10px;
+}
+.bold{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 900;
+}
+
+@media only screen and (min-width:100px) and (max-width:399px){
+    .container{
+        height:500px;
+    }
+    .bold{
+      
+        font-size: 27px;
+    } 
+    #word{
+        font-size: 25px;
+    }
+}
