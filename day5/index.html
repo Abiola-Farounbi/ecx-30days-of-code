@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" type="text/css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/brands.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <div class='container' > 
+        <h1 class="text_1"> To Do List <br> <i class='fas fa-tasks'></i></h1>
+        <div class='card'>
+            <form id="task-form">
+                    <label for='task'>Add Task:</label>
+                    <input type="text" name="task" id="task">
+                    <br>
+                    <button class="btn"> Add Task <i class='fas fa-plus'></i></button>
+            </form>
+        </div>
+        
+        <div class='list'> 
+        <h4 class="text_2"> Tasks For The Day </h4>
+        <!-- <input type="text" name="filter" id="filter">
+        <label for="filter">Search for Tasks</label> -->
+        <ul class="collection">
+       
+            
+        </ul>
+        <button class=" clearTask"> 
+            Clear Tasks
+        </button>
+        </div>
+
+</div>
+    <script src="app.js"></script>
+</body>
+</html>

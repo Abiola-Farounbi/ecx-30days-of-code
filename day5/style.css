@@ -1,0 +1,121 @@
+body{
+    margin: 0 !important;
+    padding: 0;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    color: black; 
+   }
+   .container{
+    
+   }
+ 
+   .card {
+    width: 60%;
+    
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+    margin: 40px auto;
+    position: relative;
+
+
+    color: black;
+    
+    /* border-radius: 5px; */
+    
+    padding: 50px;
+    
+  
+       
+    }
+    .card label{
+        display: block;
+        font-style: oblique;
+        color: #370560;
+        margin-bottom: 5px;
+    }
+    .card input{
+        width:100%;
+        border-top-color:transparent;
+        border-left-color: transparent;
+        border-right-color:transparent;
+        border-bottom:2px solid purple;
+        color:black;
+    }
+    .card input:hover{
+        background-color: #370560 ;
+        color: white;
+    }
+   .text_1{
+       color:black;
+       text-shadow:2px 2px 4px white;
+       font-size: 40px;
+       margin-bottom: 10px;
+       margin-top: 0px;
+       padding: 5px;
+      
+       text-align: center;
+       background-color:#b721ff;
+       background-image: linear-gradient(-20deg, #21d4fd 10%,#b721ff 90%);
+   }
+   .list{
+      border-top:4px solid grey;
+      width: 90%;
+      margin: 0px auto;
+      border-bottom: 4px solid grey;
+   }
+
+.text_2{
+    color: #370560;
+    font-size: 30px;
+    margin:30px 0px;
+    text-align: center;
+}
+.clearTask{
+    float:right;
+    margin-top:30px;
+    box-shadow: 0 2px 2px 0 black,0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+    padding: 5px;
+    background-color:#dfcee6 ;
+    border:none;
+
+}
+.remove{
+    background-color: white;
+    border-radius: 50%;
+    float: right;
+    border: none;
+}
+.check{
+    background-color: white;
+    border-radius: 15px;
+    margin-right: 20px;
+    border: none;
+}
+.collection-item{
+     list-style: disclosure-open;
+      margin:10px;
+      padding: 10px;
+      font-size:20px;
+      color:#370560;
+       text-shadow:2px 2px 4px white;
+       font-weight: 600;
+}
+.btn{
+    border:none;
+    border-radius:10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding: 7px;
+    background-color: #b721ff;
+    display:block;
+    float:right;
+}
+
+
+
+@media only screen and (min-width:100px) and (max-width:399px){
+    .text_1{
+        font-size: 30px;
+
+    }
+
+}
