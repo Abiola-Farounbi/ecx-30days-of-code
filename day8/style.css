@@ -1,0 +1,161 @@
+
+body{
+    background-color: aliceblue;
+}
+.game--title{
+  text-align: center;
+  font-weight: 600;
+  color: darkcyan;
+  border-bottom: 2px solid black;
+
+}
+.game--title p{
+    font-size: 15px;
+    font-style: italic;
+}
+.container{
+
+    
+    width: 40%;
+    
+    height: 500px;
+    
+    background-color:black;
+    
+    padding: 10px;
+    
+    margin: 60px auto;
+    
+    box-shadow: 2px 2px 4px white, 2px 2px 4px white;
+    border-radius: 15%;
+      
+}
+.game--container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 350px;
+    margin: 50px auto;
+    grid-gap:2em;
+}
+.game--status{
+    text-align: center;
+}
+.game--restart{
+    padding: 5px;
+
+background-color: darkcyan;
+
+border: none;
+
+margin: 15px;
+
+color: white;
+
+font-size: 15px;
+}
+.cell {
+    
+    width: 100px;
+
+height: 100px;
+
+box-shadow: 0 0 0 1px white;
+
+border: 1px solid white;
+
+cursor: pointer;
+
+line-height: 80px;
+
+font-size: 60px;
+
+border-radius: 10px;
+
+text-align: center;
+}
+.game--status{
+    text-align:center;
+    color:aliceblue;
+    font-weight: 600px;
+    font-size: 20px;
+}
+
+@media only screen and (min-width:100px) and (max-width:399px){
+    .game--title{
+  text-align: center;
+  font-weight: 600;
+  color: darkcyan;
+  border-bottom: 2px solid black;
+
+}
+.game--title p{
+    font-size: 15px;
+    font-style: italic;
+}
+.container{
+
+    
+    width: 90%;
+    
+    height: 500px;
+    
+    background-color:black;
+    
+    padding: 10px;
+    
+    margin: 60px auto;
+    
+    box-shadow: 2px 2px 4px white, 2px 2px 4px white;
+    border-radius: 5%;
+      
+}
+.game--container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 210px;
+    margin: 46px auto;
+    grid-gap:1em;
+}
+.game--status{
+    text-align: center;
+}
+.game--restart{
+    padding: 5px;
+
+background-color: darkcyan;
+
+border: none;
+
+margin: 15px;
+
+color: white;
+
+font-size: 15px;
+}
+.cell {
+    
+    width: 60px;
+
+height: 90px;
+
+box-shadow: 0 0 0 1px white;
+
+border: 1px solid white;
+
+cursor: pointer;
+
+line-height: 80px;
+
+font-size: 60px;
+
+border-radius: 10px;
+
+text-align: center;
+}
+.game--status{
+    text-align:center;
+    color:aliceblue;
+    font-weight: 600px;
+    font-size: 20px;
+}
+}
