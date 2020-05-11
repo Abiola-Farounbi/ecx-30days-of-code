@@ -1,0 +1,237 @@
+*{
+    margin:0px;
+  padding: 0px;
+}
+body{
+    background: -webkit-gradient(linear, left top, right top, from(rgba(4,191,212,0.9)), to(rgba(117,8,161,0.9)));
+
+  background: -webkit-linear-gradient(left, rgba(4,191,212,0.9) 0%, rgba(117,8,161,0.9) 100%);
+
+  background: -o-linear-gradient(left, rgba(4,191,212,0.9) 0%, rgba(117,8,161,0.9) 100%);
+
+  background: linear-gradient(-270deg, rgba(4,191,212,0.9) 0%, rgba(117,8,161,0.9) 100%);
+  
+}
+
+.game--title{
+  text-align: center;
+  font-weight: 600;
+  color:white;
+background-color: rgba(117,8,161,0.9) ;
+padding:10px;
+border-bottom:5px solid black;
+
+
+}
+.game--title h2{
+    margin-bottom: 10px;
+}
+
+.counter1 ,.time1{
+    color:white;
+    float:left;
+    font-size: 30px;
+    border-right:2px solid black;
+    margin-right: 7px;
+    padding:10px;
+}
+
+.container{
+
+    
+    width: 50%;
+    
+    height: 600px;
+    
+    
+    
+    padding: 10px;
+    
+    margin: 60px auto;
+    
+ box-shadow: 2px 2px 4px black, 2px 2px 4px black;
+    
+      
+}
+.game--container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    width: 500px;
+    margin: 50px auto;
+    grid-gap:2em;
+  
+}
+.game--title h2{
+    margin-bottom: 10px;
+}
+
+.game--restart{
+    padding: 8px;
+    background-color: aliceblue;
+    border: none;
+    margin: 15px;
+    /* color: white; */
+    font-size: 15px;
+    border-radius: 10px;
+
+
+}
+.cell {
+    
+width: 100px;
+
+height: 100px;
+
+box-shadow: 0 0 0 1px black;
+
+border: 1px solid black;
+
+cursor: pointer;
+
+line-height: 80px;
+
+font-size: 60px;
+
+border-radius: 10px;
+
+text-align: center;
+perspective: 1000px;
+transition: transform 0.6s;
+transform-style: preserve-3d;
+border-bottom-right-radius: 40px;
+
+border-top-left-radius: 40px;
+color:white;
+font-size: 40px;
+    font-weight: 600;
+
+}
+
+.flipped {
+    transform:rotateY(180deg);
+}
+.matchingcards {
+    background:  rgba(117,8,161,0.9) ;
+    
+    -webkit-transition: all 1s ease-in-out 1s;
+    -o-transition: all 1s ease-in-out 1s;
+    transition: all 1s ease-in-out 1s;
+    color:black;
+  }
+  
+  
+.front-face,.back-face{
+    backface-visibility: hidden;
+}
+.front-face{
+   z-index: 2;
+   background-color: brown;
+   transform: rotateY(0deg);
+}
+.back-face{
+     transform: rotateY(180deg); 
+    /* background-color: red; */
+}
+#winner{
+    color:white;
+    font-size: 20px;
+    font-weight:600;
+    text-align: center;
+}
+
+
+@media only screen and (min-width:100px) and (max-width:399px){
+    .game--title{
+        text-align: center;
+        font-weight: 600;
+        color:white;
+      background-color: rgba(117,8,161,0.9) ;
+      padding:10px;
+      border-bottom:5px solid black;
+      
+      
+      }
+      .container{
+
+    
+        width: 90%;
+        
+        height: 600px;
+        
+        
+        
+        padding: 10px;
+        
+        margin: 60px auto;
+        
+     box-shadow: 2px 2px 4px black, 2px 2px 4px black;
+        
+          
+    }
+.game--container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    width: 260px;
+    margin: 46px auto;
+    grid-gap:1em;
+}
+
+  
+.game--restart{
+    padding: 8px;
+    background-color: aliceblue;
+    border: none;
+    margin: 15px;
+    /* color: white; */
+    font-size: 15px;
+    border-radius: 10px;
+
+
+
+}
+
+.cell {
+    
+width: 53px;
+
+height: 70px;
+
+box-shadow: 0 0 0 1px black;
+
+border: 1px solid black;
+
+cursor: pointer;
+
+line-height: 80px;
+
+
+text-align: center;
+perspective: 1000px;
+transition: transform 0.6s;
+transform-style: preserve-3d;
+border-bottom-right-radius: 30px;
+
+border-top-left-radius: 30px;
+color:white;
+font-size: 40px;
+    font-weight: 600;
+
+}
+.matchingcards {
+    background:  rgba(117,8,161,0.9) ;
+    
+    -webkit-transition: all 1s ease-in-out 1s;
+    -o-transition: all 1s ease-in-out 1s;
+    transition: all 1s ease-in-out 1s;
+    color:black;
+  }
+  .counter1 ,.time1{
+    color:white;
+    float:left;
+    font-size: 20px;
+    border-right:2px solid black;
+    margin-right: 7px;
+    padding:10px;
+}
+
+}
