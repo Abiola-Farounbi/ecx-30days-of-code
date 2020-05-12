@@ -1,7 +1,7 @@
 
 const xhr = new XMLHttpRequest();
 
-  xhr.open('GET', `http://jsonplaceholder.typicode.com/users`, true);
+  xhr.open('GET', `https://jsonplaceholder.typicode.com/users`, true);
 
   xhr.onload = function() {
     if(this.status === 200) {
