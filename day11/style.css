@@ -1,0 +1,194 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+   background-color: #f93d9b;
+}
+.container{
+    width:100%;
+}
+.container input{
+    width: 50%;
+
+   text-align: center;
+    
+    margin-left: 250px;
+    color:black;
+    margin-top: 30px;
+    background-color:#fdd8fd;
+    border:1px solid hotpink;
+    border-radius: 2px;
+    padding: 10px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 95%;
+    margin: 100px auto;
+    border-radius: 10px;
+    height:400px;
+    grid-gap:3em;
+}
+.grid > div{
+    /* text-align:center; */
+    /* width:100px; */
+    height:350px;
+   border-radius: 10px;
+    background-color:#fdd8fd;
+}
+.grid > div:nth-child(10){
+    position: relative;
+    left:370px;
+}
+.grid img{
+    width:150px;
+    height:100px;
+}
+.heading{
+    text-align: center;
+    color: black;
+    margin:10px auto;
+}
+.text{
+    text-align: left;
+
+    margin: 5px 10px;
+
+    padding: 10px;
+
+    color: #3c023e;
+
+    font-weight: 700;
+}
+.username{
+    font-variant: small-caps;
+
+    font-size: 30px;
+}
+.name{
+    margin-top: 10px;
+    border-bottom: 1px solid #fb6680;
+}
+.email{
+    margin-top: 10px;
+    border-bottom: 1px solid #fb6680;
+    font-style: italic;
+}
+.city{
+    margin-top: 10px;
+    border-bottom: 1px solid #fb6680;
+}
+.website{
+    margin-top: 10px;
+    border-bottom: 1px solid #fb6680;
+    font-style: italic;
+}
+
+
+
+
+
+@media only screen and (min-width:100px) and (max-width:399px){
+    .container input{
+        width: 50%;
+    
+       text-align: center;
+        color:black;
+        margin-top: 30px;
+        background-color:#fdd8fd;
+        border:1px solid hotpink;
+        border-radius: 2px;
+        padding: 10px;
+        margin-left: 50px;
+    }
+    .grid{
+       display:block;
+        width: 90%;
+        margin: 50px auto;
+        border-radius: 10px;
+        height:400px;
+       
+    }
+    .grid > div{
+        margin-bottom: 20px;
+        height:350px;
+       border-radius: 10px;
+        background-color:#fdd8fd;
+    }
+    
+    .grid img{
+        width:150px;
+        height:100px;
+    }
+    .grid > div:nth-child(10){
+        position: relative;
+        left:0px
+       
+    }
+    .heading{
+        text-align: center;
+        color: black;
+        margin:10px auto;
+        font-size: 30px;
+    }
+    
+    .text{
+        text-align: left;
+    
+        margin: 5px 10px;
+    
+        padding: 10px;
+    
+        color: #3c023e;
+    
+        font-weight: 700;
+    }
+    .username{
+        font-variant: small-caps;
+    
+        font-size: 30px;
+    }
+    .name{
+        margin-top: 10px;
+        border-bottom: 1px solid #fb6680;
+    }
+    .email{
+        margin-top: 10px;
+        border-bottom: 1px solid #fb6680;
+        font-style: italic;
+    }
+    .city{
+        margin-top: 10px;
+        border-bottom: 1px solid #fb6680;
+    }
+    .website{
+        margin-top: 10px;
+        border-bottom: 1px solid #fb6680;
+        font-style: italic;
+    }
+    .username{
+        font-variant: small-caps;
+    
+        font-size: 25px;
+    }
+    
+    
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
