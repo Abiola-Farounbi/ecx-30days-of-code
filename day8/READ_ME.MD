@@ -1,1 +1,1 @@
-[tic tac toe game](https://abiola-farounbi.github.io/day8/)
+[tic-tac-toe game](https://abiola-farounbi.github.io/day8/)
