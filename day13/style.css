@@ -1,0 +1,152 @@
+body{
+    background-color:black;
+}
+.container{
+    
+    width: 70%;
+
+height: 450px;
+
+background-color: #fffcee;
+
+padding: 10px;
+
+margin: 50px auto;
+
+box-shadow: 1px 1px 2px yellow ,1px 1px 2px gold;
+
+
+
+
+border: 17px solid black;
+   
+}
+.emoji{
+    color: yellow;
+    font-size: 50px;
+    animation: laughing 1.4s linear infinite;
+    
+}
+@keyframes laughing{
+    0%{transform: rotate(0deg) scale(1);}
+    25%{transform: rotate(20deg) scale(1);}
+    30%{transform: rotate(45deg) scale(1.1);}
+    50%{transform: rotate(0deg) scale(1.2);}
+    70%{transform: rotate(45deg) scale(1);}
+    100%{transform: rotate(0deg) scale(1);}
+
+}
+#word{
+    color:#462405;
+    width:100%;
+    font-style: italic;
+    padding-top:50px;
+    padding-left: 30px;
+   
+}
+.category{
+    border: 1px solid black;
+
+padding: 10px;
+
+background-color: gold;
+
+color: white;
+}
+.setup{
+    text-align: center;
+
+font-size: 30px;
+
+font-weight: 500;
+
+margin-top: 40px;
+}
+.delivery{
+    text-align: center;
+
+font-size: 20px;
+
+font-weight: 500;
+
+
+}
+.tweet{
+    margin-top:10px;
+}
+h2{
+    font-size: 50px;
+    text-align: center;
+}
+.bold{
+  
+    text-transform: uppercase;
+    color:#fff0b5;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 2px gold;
+   
+}
+
+
+@media only screen and (min-width:100px) and (max-width:399px){
+    .container{
+    
+        width: 85%;
+    
+    height: 450px;
+    
+    background-color: #fffcee;
+    
+    padding: 10px;
+    
+    margin: 50px auto;
+    
+    box-shadow: 1px 1px 2px yellow ,1px 1px 2px gold;
+    
+    
+    
+    
+    border: none;
+       
+    }
+    .bold{
+      
+        font-size: 40px;
+    } 
+  
+    .category{
+        border: 1px solid black;
+    padding:5px;
+   
+    
+    background-color: gold;
+    
+    color: white;
+    }
+    .setup{
+        text-align: center;
+    
+    font-size: 20px;
+    
+    font-weight: 500;
+    
+    margin-top: 40px;
+    }
+    .delivery{
+        text-align: center;
+    
+    font-size: 15px;
+    
+    font-weight: 500;
+    
+    
+    }
+    #word{
+        color:#462405;
+        width:100%;
+        font-style: italic;
+        
+        padding-left: 10px;
+       
+    }
+}
