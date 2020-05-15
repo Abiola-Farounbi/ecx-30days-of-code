@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Users Profiles </title>
+    <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
+    <link rel='stylesheet' href='style.css'>
+     <link rel="stylesheet" href="https://bootswatch.com/4/united/bootstrap.min.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-dark bg-primary mb-3">
+        <div class="container">
+          <p style='text-align: center;' class="navbar-brand"><h1>  Github Users Profiles </h1>  <img  class=" image"src='index3.png' alt='github icon'></p>
+        </div>
+      </nav>
+      <div class="container searchContainer">
+        <div class="search card card-body">
+          <h1>Serach for the GitHub Users</h1>
+          <h5 class="lead">Enter a username to search a user profile </h5>
+          <input type="text" id="searchUser" class="form-control" placeholder="GitHub Username...">
+        </div>
+        <br>
+        <div id="profile"></div>
+      </div>
+    
+      <footer class="mt-5 p-3 text-center bg-primary">
+        GitHub Finder &copy;
+      </footer>
+
+
+
+  <!-- link to the github profiles -->
+ <script src="github.js"></script>
+ <script src="ui.js"></script>
+ <script src="app.js"></script>   
+</body>
+</html>
