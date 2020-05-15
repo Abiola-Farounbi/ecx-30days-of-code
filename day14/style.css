@@ -1,0 +1,159 @@
+body{
+    background-color:#e4f2ff;
+    margin: 0px;
+    padding:0px;
+}
+.heading{
+    background-image: linear-gradient(to bottom right, #0ae3e3, #0528ea);
+
+font-family: tahoma;
+    text-align: center;
+    font-size: 50px;
+    color:white;
+    padding:20px;
+    margin-top: 0px;
+}
+.searchBar{
+    width: 50%;
+
+
+}
+.search{
+    /*! width: 80%; */
+
+padding: 10px;
+    border: 1px solid black;
+    border-radius: 26px;
+    color: black;
+}
+.search-bar{
+    
+    margin: 5px auto;
+}
+.search-button{
+   
+    /*! padding: 20px; */
+    background-color: whitesmoke;
+    border: none;
+    font-size: 25px;
+    color: #020539;
+}
+.container{
+    
+    width: 70%;
+    height:700px;
+     background-color:whitesmoke;
+
+padding: 25px;
+
+margin: 20px auto;
+
+border-radius:10px;
+    /*! border-radius: 15%; */
+}
+.display{
+    padding: 10px;
+
+font-size: 20px;
+
+margin-top: 20px;
+
+margin-left: 30px;
+}
+.word{
+   text-transform: uppercase;
+    font-style: italic;
+
+border-bottom: 2px solid blue;
+}
+.collection{
+    margin-left: 30px;
+
+list-style: square;
+}
+
+
+
+@media only screen and (min-width:100px) and (max-width:399px){
+  
+    .heading{
+        background-image: linear-gradient(to bottom right, #0ae3e3, #0528ea);
+    
+    font-family: tahoma;
+        text-align: center;
+        font-size: 30px;
+        color:white;
+        padding:10px;
+        margin-top: 0px;
+    }
+    .searchBar{
+        width: 100%;
+    
+    
+    }
+    .search{
+        width: 50%;
+    
+    padding: 10px;
+        border: 1px solid black;
+        border-radius: 26px;
+        color: black;
+    }
+    .search-bar{
+        
+        margin: 5px auto;
+    }
+    .search-button{
+       
+        padding: 5px;
+        background-color: whitesmoke;
+        border: none;
+        font-size: 25px;
+        color: #020539;
+        /*! display: inline; */
+        /*! float: left; */
+    }
+    .search-button2{
+       
+        padding: 5px;
+        background-color: whitesmoke;
+        border: none;
+        font-size: 15px;
+        color: red;
+        /*! display: inline; */
+        /*! float: left; */
+    }
+    .container{
+        
+        width: 80%;
+        height:700px;
+         background-color:whitesmoke;
+    
+    padding: 25px;
+    
+    margin: 20px auto;
+    
+    border-radius:10px;
+        /*! border-radius: 15%; */
+    }
+    .display{
+        padding: 0px;
+    
+    font-size: 15px;
+    
+    margin-top: 20px;
+    
+    margin-left: 0px;
+    }
+    .word{
+       text-transform: uppercase;
+        font-style: italic;
+    
+    border-bottom: 2px solid blue;
+    }
+    .collection{
+        margin-left: 0px;
+    
+    list-style: square;
+    } 
+}

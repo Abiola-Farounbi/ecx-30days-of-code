@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary</title>
+    
+    <link rel='stylesheet' href="style.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/brands.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+
+</head>
+<body>
+    <h2  class='heading'> Dictionary <i class='fas fa-book-reader' ></i></h2>
+   
+    <div class="container">
+        <div class="searchBar"> 
+            <input type="text" placeholder="Search.."  class='search'>
+            <button  onclick= ' window.location.reload()' type="submit" class='search-button2' > X </button>
+            <button  onclick= 'searchWord()' type="submit" class='search-button'><i class="fa fa-search"></i></button>
+        </div>
+            <div class="display">
+                <div class="word"></div>
+                <ul class='collection'>
+                    <li class='meaning'>
+                        <p class='one'></p>
+                        <p class='two'> </p>
+                       
+                    </li>
+                <li class='parts-of-speech'></li>
+                <li class='synonyms'></li>
+            </ul>
+            </div>
+    </div>
+   
+<script src='app.js'></script>
+</body>
+</html>
