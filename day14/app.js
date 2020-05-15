@@ -16,7 +16,7 @@ function searchWord(){
 // using xhr object to  fetch data from api
 const xhr = new XMLHttpRequest();
 
-xhr.open('GET', `https://www.dictionaryapi.com/api/v3/references/collegiate/json/${value}?key=22c7e3b3-2dbf-43a2-95d8-30ea0c96c8ec`, true);
+xhr.open('GET', `http://www.dictionaryapi.com/api/v3/references/collegiate/json/${value}?key=22c7e3b3-2dbf-43a2-95d8-30ea0c96c8ec`, true);
 
 xhr.onload = function () {
   if(this.status === 200) {
