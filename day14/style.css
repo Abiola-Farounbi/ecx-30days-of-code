@@ -38,6 +38,14 @@ padding: 10px;
     font-size: 25px;
     color: #020539;
 }
+.search-button2{
+   
+    /*! padding: 20px; */
+    background-color: whitesmoke;
+    border: none;
+    font-size: 15px;
+    color: red;
+}
 .container{
     
     width: 70%;
