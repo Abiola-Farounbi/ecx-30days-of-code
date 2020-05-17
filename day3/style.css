@@ -2,51 +2,104 @@ body{
     background-color: #130a0a;
 }
 .container{
-    margin-top: 10px;
+    /*! margin-top: 10px; */
     padding: 30px;
 
+    margin: 50px auto;
+    width: 60%;
+    background-color: whitesmoke;
+    border-radius: 50px;
+    color: black;
+    height: 500px;
 }
 .content{
     display: block;
-    color:aliceblue;
-    margin: 15px;
-    font-size: medium;
+    color:black;
+    margin-top: 15px;
+    /*! font-size: medium; */
     font-weight: 400;
+    font-size: 15px;
+    /*! font-style: italic; */
 }
 .heading{
     line-height: 10px;
-    color:lime;
+    color:#130a0a;
+    font-size: 30px;
+    text-align: center;
 }
 #formId{
     margin:10px;
     padding: 10px;
-    color:aliceblue;
+    color:#130a0a;
 }
 #formId input{
-    width:35%;
+    width:50%;
     padding: 7px;
     border-radius: 5px;
     margin-top: 15px;
 }
 .submit{
     display: block;
-    margin-top: 10px;
+    margin-top: 20px;
     border-radius: 5px;
-    background-color: white;
+    background-color: brown;
     
+    border: none;
+    padding: 10px;
+    /*! float: right; */
 }
 .reload{
+    /*! display: block; */
+    /*! margin-top: 10px; */
+    /*! border-radius: 5px; */
+    /*! background-color: white; */
     display: block;
-    margin-top: 10px;
+    margin-top: 20px;
     border-radius: 5px;
-    background-color: white;
+    background-color: black;
+    border: none;
+    padding: 10px;
+    color: white;
+    float: right;
 }
 #result{
     display: block;
-    color:lime;
-    font-style: italic;
+    /*! font-style: italic; */
     margin: 15px;
     font-size: medium;
     font-weight: 500;
 
+    text-transform: uppercase;
+    color: #312109;
+    text-align: center;
 }
+
+@media only screen and (min-width:100px) and (max-width:399px){
+.container{
+    /*! margin-top: 10px; */
+    padding: 30px;
+
+    margin: 50px auto;
+    width: 75%;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    color: black;
+    height: 500px;
+}
+.content{
+    display: block;
+    color:black;
+    margin-top: 15px;
+    /*! font-size: medium; */
+    font-weight: 400;
+    font-size: 10px;
+    /*! font-style: italic; */
+}
+.heading{
+    line-height: 10px;
+    color:#130a0a;
+    font-size: 15px;
+    text-align: center;
+}
+
+}    
