@@ -1,6 +1,6 @@
 // creating a function to fetch the api
 function getCountryName(){
-    fetch('http://restcountries.eu/rest/v2/all')
+    fetch('https://restcountries.eu/rest/v2/all')
     .then(function(response){
         return response.json();
     })
