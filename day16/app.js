@@ -23,8 +23,8 @@ function getCountryName(){
                
            
            <span class='badge badge-secondary  style='background-color:hsla(203.1, 100%, 75.1%, 0.98);'> Population: ${value.population} </span>
-           <span class='badge badge-secondary' style='background-color:hsla(203.1, 100%, 75.1%, 0.98);' > Area:${value.area} </span>
-           <span class='badge badge-secondary'  style='background-color:hsla(203.1, 100%, 75.1%, 0.98);'> currency:${value.currencies[0].name}</span>
+           <span class='badge badge-secondary' style='background-color:hsla(203.1, 100%, 75.1%, 0.98);' > Calling Codes: ${value.callingCodes[0]}</span>
+           <span class='badge badge-secondary'  style='background-color:hsla(203.1, 100%, 75.1%, 0.98);'> currency:${value.currencies[0].symbol}</span>
          
       </div>`
             });
