@@ -1,0 +1,104 @@
+body{
+    background-color:hsl(207, 26%, 17%);
+    
+}
+.heading{
+    background-color:   hsl(209, 23%, 22%);
+    color:hsla(203.1, 100%, 75.1%, 0.98);
+    padding:10px 60px;
+
+}
+ input{
+    width: 40%;
+    color:hsl(0, 0%, 100%);    
+    margin-top: 30px;
+    background-color: hsl(209, 23%, 22%);
+    border:none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left:10px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    width: 95%;
+    margin: 100px auto;
+    border-radius: 10px;
+    height:400px;
+    grid-gap:3em;
+}
+.grid > div{
+    box-shadow: 2px 2px 4px white;
+   border-radius: 10px;
+    background-color:hsl(209, 23%, 22%);
+    color:hsl(0, 0%, 100%);  
+    margin-bottom: 10px;
+}
+.item{
+    padding:10px;
+}
+.heading2{
+    text-align: center;
+}
+.list-group{
+    color:black;
+}
+.list{
+    list-style: none;
+    border-bottom: 2px solid white;
+    padding:5px;
+    display:block;
+}
+
+@media only screen and (min-width:100px) and (max-width:399px){
+
+    .heading{
+        background-color:   hsl(209, 23%, 22%);
+        color:hsla(203.1, 100%, 75.1%, 0.98);
+        padding:15px;
+        font-size:20px;
+    
+    }
+     input{
+        width: 65%;
+        color:hsl(0, 0%, 100%);    
+        margin-top: 30px;
+        background-color: hsl(209, 23%, 22%);
+        border:none;
+        border-radius: 10px;
+        padding: 10px;
+        margin-left:10px;
+    }
+    .grid{
+        display:block;
+        width: 95%;
+        margin: 100px auto;
+        border-radius: 10px;
+        height:400px;
+        
+    }
+    .grid > div{
+        
+       border-radius: 10px;
+        background-color:hsl(209, 23%, 22%);
+        color:hsl(0, 0%, 100%);  
+        margin-bottom: 10px;
+    }
+    .item{
+        padding:10px;
+    }
+    .heading2{
+        text-align: center;
+    }
+    .list-group{
+        color:black;
+    }
+    .list{
+        list-style: none;
+        border-bottom: 2px solid white;
+        padding:5px;
+        display:block;
+    }
+
+}
