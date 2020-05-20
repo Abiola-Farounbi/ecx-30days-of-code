@@ -3,6 +3,7 @@
 
 ###### Day 19 Task
 ===================
+
 ###### Using the iMBD api create a movie app that displays featured today, trending and discover section. Every movie should have a picture, title, genre and rating.
 ###### Frameworks and Libraries are allowed.
 ###### Bonus - A functional Search Movies SearchBar
