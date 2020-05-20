@@ -100,13 +100,13 @@ var searchValue=document.querySelector('.search').value;
            html +=`
            <div class='display'>
            <img class='image3' src='https://images.tmdb.org/t/p/original${output3}'>
-           <div>
+           
            <li class='i'><a style='color:white;'href='Name -${output6}' target='_blank'>${output4}</a></li>
            <li class='u'>${output5}</li>
            <li class='v'>Ratings ${output7}</li>
            <li class='v'>Released ${output8}</li>
 
-           </div>
+           
            </div>
            
            `
