@@ -75,11 +75,12 @@ var searchValue=document.querySelector('.search').value;
    })
    .then(function(values){
       
-      let output1=values.results
+      var output1=values.results
+      let html=' ';
     for(var i=0 ; i<output1.length; i++){
-       let html=' ';
+       
        let output2=output1[i].id
-          fetch(`https://api.themoviedb.org/3/movie/${output2}?api_key=23d3e5b3f085a72f85a21217806d544d&language=en-US`)
+          fetch(`https://api.themoviedb.org/3/movie/${output1[i]}?api_key=23d3e5b3f085a72f85a21217806d544d&language=en-US`)
            .then(function(response){
            return response.json()
         })
