@@ -80,7 +80,7 @@ var searchValue=document.querySelector('.search').value;
     for(var i=0 ; i<output1.length; i++){
        
        let output2=output1[i].id
-          fetch(`https://api.themoviedb.org/3/movie/${output1[i]}?api_key=23d3e5b3f085a72f85a21217806d544d&language=en-US`)
+          fetch(`https://api.themoviedb.org/3/movie/${output2}?api_key=23d3e5b3f085a72f85a21217806d544d&language=en-US`)
            .then(function(response){
            return response.json()
         })
