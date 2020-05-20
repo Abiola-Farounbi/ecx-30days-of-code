@@ -129,7 +129,7 @@ var searchValue=document.querySelector('.search').value;
    })
  
    .catch(function(err){
-       document.querySelector('.error').innerHTML='No Result Found !'
+       console.log('Not Found !')
    })
 
 }
