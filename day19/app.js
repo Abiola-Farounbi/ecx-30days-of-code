@@ -69,16 +69,16 @@ function getSearch(){
     
 var searchValue=document.querySelector('.search').value;
 
-   fetch(`http://api.themoviedb.org/3/search/movie?api_key=23d3e5b3f085a72f85a21217806d544d&query=${searchValue}`)
+   fetch(`https://api.themoviedb.org/3/search/movie?api_key=23d3e5b3f085a72f85a21217806d544d&query=${searchValue}`)
    .then(function(response){
       return response.json()
    })
    .then(function(values){
       
       let output1=values.results
-    
+    for(var i=0 ; i<output1.length; i++){
        let html=' ';
-       let output2=output1[0].id
+       let output2=output1[i].id
           fetch(`https://api.themoviedb.org/3/movie/${output2}?api_key=23d3e5b3f085a72f85a21217806d544d&language=en-US`)
            .then(function(response){
            return response.json()
@@ -116,7 +116,7 @@ var searchValue=document.querySelector('.search').value;
     })    
 
   
-    
+    } 
     
 
         
