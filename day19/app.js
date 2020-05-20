@@ -86,7 +86,7 @@ var searchValue=document.querySelector('.search').value;
         })
         .then(function(value){
       
-            console.log(value.original_title)
+            
             let output3=value.poster_path;
             let output4=value.original_title;
             let output5=value.overview;
@@ -94,8 +94,7 @@ var searchValue=document.querySelector('.search').value;
             let output7=value.vote_average;
             let output8=value.release_date;
             
-         console.log(value) 
-         
+        
        
           
            html +=`
