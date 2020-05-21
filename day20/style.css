@@ -1,0 +1,25 @@
+
+.ontainer{
+    width:100%;
+}
+
+.container .heading{
+    text-align: center;
+    color:red;
+    font-size:25px;
+   padding:10px;
+   border-bottom:1px solid black;
+}
+
+#map{
+    margin:0px auto;
+    height: 400px;
+    width:70%;
+    border-radius:10px;
+}
+footer{
+    text-align: center;
+    color:tomato;
+    font-size:15px;
+    margin:10px;
+}
