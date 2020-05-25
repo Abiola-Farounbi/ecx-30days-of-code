@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp/Login</title>
+
+    
+     <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+    
+    
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-auth.js"></script>
+    
+    <script>
+        // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyD27S-n1t5uAFohUsLWURH7pv8AsDlzwpw",
+        authDomain: "todo-app-88222.firebaseapp.com",
+        databaseURL: "https://todo-app-88222.firebaseio.com",
+        projectId: "todo-app-88222",
+        storageBucket: "todo-app-88222.appspot.com",
+        messagingSenderId: "247830035113",
+        appId: "1:247830035113:web:82197f704e9439684fc7b8",
+        measurementId: "G-4E3PYCMD0V"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    //   firebase.analytics();
+        
+    </script>
+    
+      <script type="text/javascript">
+      
+    
+        /**
+         * Handles the sign in button press.
+         */
+        function toggleSignIn() {
+          if (firebase.auth().currentUser) {
+            firebase.auth().signOut();
+          } 
+          else {
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            if (email.length < 4) {
+              alert('Please enter an email address.');
+              return;
+            }
+            if (password.length < 4) {
+              alert('Please enter a password.');
+              return;
+            }
+            // Sign in with email and pass.
+            // [START authwithemail]
+            firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+              // Handle Errors here.
+              var errorCode = error.code;
+              var errorMessage = error.message;
+              // [START_EXCLUDE]
+              if (errorCode === 'auth/wrong-password') {
+                alert('Wrong password.');
+              } else {
+                alert(errorMessage);
+              }
+              console.log(error);
+              document.getElementById('quickstart-sign-in').disabled = false;
+              // [END_EXCLUDE]
+            });
+            // [END authwithemail]
+          }
+          document.getElementById('quickstart-sign-in').disabled = true;
+        }
+    
+        /**
+         * Handles the sign up button press.
+         */
+        function handleSignUp() {
+          var email = document.getElementById('email').value;
+          var password = document.getElementById('password').value;
+          if (email.length < 4) {
+            alert('Please enter an email address.');
+            return;
+          }
+          if (password.length < 4) {
+            alert('Please enter a password.');
+            return;
+          }
+          // Create user with email and pass.
+          // [START createwithemail]
+          firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+            // Handle Errors here.
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            // [START_EXCLUDE]
+            if (errorCode == 'auth/weak-password') {
+              alert('The password is too weak.');
+            } else {
+              alert(errorMessage);
+            }
+            console.log(error);
+            // [END_EXCLUDE]
+          });
+          // [END createwithemail]
+        }
+    
+        /**
+         * Sends an email verification to the user.
+         */
+        function sendEmailVerification() {
+          // [START sendemailverification]
+          firebase.auth().currentUser.sendEmailVerification().then(function() {
+            // Email Verification sent!
+            // [START_EXCLUDE]
+            alert('Email Verification Sent!');
+            // [END_EXCLUDE]
+          });
+          // [END sendemailverification]
+        }
+    
+        function sendPasswordReset() {
+          var email = document.getElementById('email').value;
+          // [START sendpasswordemail]
+          firebase.auth().sendPasswordResetEmail(email).then(function() {
+            // Password Reset Email Sent!
+            // [START_EXCLUDE]
+            alert('Password Reset Email Sent!');
+            // [END_EXCLUDE]
+          }).catch(function(error) {
+            // Handle Errors here.
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            // [START_EXCLUDE]
+            if (errorCode == 'auth/invalid-email') {
+              alert(errorMessage);
+            } else if (errorCode == 'auth/user-not-found') {
+              alert(errorMessage);
+            }
+            console.log(error);
+            // [END_EXCLUDE]
+          });
+          // [END sendpasswordemail];
+        }
+    
+        /**
+         * initApp handles setting up UI event listeners and registering Firebase auth listeners:
+         *  - firebase.auth().onAuthStateChanged: This listener is called when the user is signed in or
+         *    out, and that is where we update the UI.
+         */
+        function initApp() {
+          // Listening for auth state changes.
+          // [START authstatelistener]
+          firebase.auth().onAuthStateChanged(function(user) {
+            // [START_EXCLUDE silent]
+            document.getElementById('quickstart-verify-email').disabled = true;
+            // [END_EXCLUDE]
+            if (user) {
+              // User is signed in.
+              var displayName = user.displayName;
+              var email = user.email;
+              var emailVerified = user.emailVerified;
+              var photoURL = user.photoURL;
+              var isAnonymous = user.isAnonymous;
+              var uid = user.uid;
+              var providerData = user.providerData;
+              // [START_EXCLUDE]
+              document.getElementById('quickstart-sign-in-status').textContent = 'Signed in';
+              document.getElementById('quickstart-sign-in').textContent = 'Sign out';
+              if (!emailVerified) {
+                document.getElementById('quickstart-verify-email').disabled = false;
+              }
+              // [END_EXCLUDE]
+            } else {
+              // User is signed out.
+              // [START_EXCLUDE]
+              document.getElementById('quickstart-sign-in-status').textContent = 'Signed out';
+              document.getElementById('quickstart-sign-in').textContent = 'Login';
+              
+              // [END_EXCLUDE]
+            }
+            // [START_EXCLUDE silent]
+            document.getElementById('quickstart-sign-in').disabled = false;
+            // [END_EXCLUDE]
+          });
+          // [END authstatelistener]
+    
+          document.getElementById('quickstart-sign-in').addEventListener('click', toggleSignIn, false);
+          document.getElementById('quickstart-sign-up').addEventListener('click', handleSignUp, false);
+          document.getElementById('quickstart-verify-email').addEventListener('click', sendEmailVerification, false);
+          document.getElementById('quickstart-password-reset').addEventListener('click', sendPasswordReset, false);
+      
+        }
+    
+        window.onload = function() {
+          initApp();
+        };
+      </script>
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+         <link rel='stylesheet' href='bootstrap/css/bootstrap.css'>
+      <link rel='stylesheet' href='style.css'>
+    </head>
+    <body class='background'>
+       <div class='container'>
+           <div class="row m-3">
+              
+            <!-- <div class="col-md-6"></div>   -->
+                    <div class="col-md-6 gradient2 p-1"> 
+                        <nav class="navbar navbar-light mb-3 p-1">
+                            <span class='navbar-brand color-text2  mb-0 hl text-center'> Sign Up/ Login</span>
+                        </nav>
+                            <div class="form-group mb-5">
+                        <label>Email</label>
+                        <input type='text' id='email' class='form-control' placeholder="Email">
+                    </div>
+                    <div class="form-group mb-5">
+                        <label>Password</label>
+                        <input type='password' class='form-control' id='password' placeholder="Password">
+                    </div>
+                   <button  id='quickstart-sign-in' disabled class='btn button p-2 m-2'> SignIn </button> 
+                   <button  id='quickstart-sign-up'  class='btn button p-2 m-2'> Sign Up </button> 
+                   <br>
+                   <span class='p-2 decrease text-center'disabled id="quickstart-verify-email"><a href='#''>Send Email Verification</a></span>
+                   <br>
+                   <span class='p-2 decrease text-center' id="quickstart-password-reset"><a href='#'>Send Password Reset Email</a></span>
+                    
+                </div>
+
+                <div class="col-md-6">
+                    <div class="quickstart-user-details-container p-3 m-3 increase">
+                        Sign-in status: <span id="quickstart-sign-in-status">Unknown</span>
+                        <br>
+                      <span><a href='index.html'>Go To Home </a></span>  
+                    </div>
+                </div>
+            </div>
+               
+           </div>
+     
+    <!-- <div class="container">
+    
+      
+        <div class="box">
+    
+              <input class="mdl-textfield__input" type="text" id="email" name="email" placeholder="Email"/>
+              &nbsp;&nbsp;&nbsp;
+              <input class="mdl-textfield__input" type="password" id="password" name="password" placeholder="Password"/>
+              <br/><br/>
+              <button disabled class="button1" id="quickstart-sign-in" name="signin">Sign In</button>
+              &nbsp;&nbsp;&nbsp;
+              <button class="button2" id="quickstart-sign-up" name="signup">Sign Up</button>
+              &nbsp;&nbsp;&nbsp;
+              <button class="button3" disabled id="quickstart-verify-email" name="verify-email">Send Email Verification</button>
+              &nbsp;&nbsp;&nbsp;
+              <button class="button4" id="quickstart-password-reset" name="verify-email">Send Password Reset Email</button>
+    
+              Container where we'll display the user details
+              <div class="quickstart-user-details-container">
+                Sign-in status: <span id="quickstart-sign-in-status">Unknown</span>
+                
+            </div>
+    
+          <div disabled class='social'  id="quickstart-sign-in2">
+          <a href="#">Sign up using
+            <i class="fab fa-google"></i>
+          </a>
+        </div>
+          </div>
+      
+    
+        </div> -->
+    
+    </body>
+    </html>   

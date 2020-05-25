@@ -1,0 +1,50 @@
+.gradient{
+
+    background-color: rebeccapurple;
+    background-image: linear-gradient(141deg, white 0%, #966cf2 51%, #3b2ab5 75%);
+    opacity: 0.95;
+}
+.gradient2{
+    background-color:aliceblue;
+   
+}
+.color-text1{
+    color: #ff00d7 !important;
+    font-size: 25px;
+    text-shadow: 1px 1px black,1px 1px black,2px 2px black;
+}
+.color-text{
+    color: #ff00d7 !important;
+    font-size: 40px;
+    text-shadow: 1px 1px black,1px 1px black,2px 2px black;
+}
+.color-text1:hover{
+    font-size:20px;
+    color:white !important;
+}
+.color-text2{
+    color:#3b2ab5 !important ;
+    font-size: 20px;
+    text-shadow: 1px 1px white,1px 1px white,2px 2px white;
+}
+.decrease{
+    font-size:10px;
+    color:black;
+}
+.increase{
+    font-size:20px;
+}
+.button{
+    background-color:#3b2ab5  ;
+}
+
+.background{
+    background-color: #3b2ab5 !important;
+}
+
+.quickstart-user-details-container{
+  text-align: center;
+  color:aliceblue;
+ 
+}
+
