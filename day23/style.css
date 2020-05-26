@@ -1,3 +1,9 @@
+
+body{
+    background-color: rebeccapurple;
+    /* background-image: linear-gradient(141deg, white 0%, #966cf2 51%, #3b2ab5 75%); */
+    opacity: 0.95; 
+}
 .gradient{
 
     background-color: rebeccapurple;
@@ -32,10 +38,19 @@
     color:black;
 }
 .increase{
-    font-size:20px;
+    font-size:18px;
 }
 .button{
-    background-color:#3b2ab5  ;
+    background-color:azure ;
+    float:right;
+}
+.button1{
+     background-color: black;
+     color:white;
+}
+.button2{
+    background-color: rebeccapurple;
+    color:white;
 }
 
 .background{
@@ -44,7 +59,8 @@
 
 .quickstart-user-details-container{
   text-align: center;
-  color:aliceblue;
+  color:black;
  
 }
+
 
