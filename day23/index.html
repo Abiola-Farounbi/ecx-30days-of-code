@@ -27,28 +27,77 @@
 <body onload='readTask()'>
   
 
-    <nav class="navbar navbar-light gradient mb-5 p-3">
-        <span class='navbar-brand color-text ml-5 mb-0 hl'> ToDo App</span>
-        <span class='navbar-brand  mb-0 hl'><a class='color-text1' href='signUp.html'>Sign Up/Login</a> </span>
+    <nav class="navbar navbar-light mb-3 p-3">
+        <span class='navbar-brand color-text ml-3 mb-0 hl'> ToDo App</span>
+        <!-- <span class='navbar-brand  mb-0 hl'><a class='color-text1' href='signUp.html'>Sign Up/Login</a> </span> -->
     </nav>
+    <div class='row'>
+    <button type="button" class="btn button ml-3 mb-2" data-toggle="modal" data-target="#locModal">
+        Sign In /Sign Up
+      </button>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="locModal" tabindex="-1" role="dialog" aria-labelledby="locModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="locModalLabel">Sign Up / Login </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            <form id="w-form">
+                <div class="form-group mb-5">
+                    <label>Email</label>
+                    <input type='text' id='email' class='form-control' placeholder="Email">
+                </div>
+                <div class="form-group mb-5">
+                    <label>Password</label>
+                    <input type='password' class='form-control' id='password' placeholder="Password">
+                </div>
+            </form>
+            </div>
+            <div class="modal-footer">
+                <button  id='quickstart-sign-in' disabled class='btn button1 p-2 m-2'> SignIn </button> 
+                   <button  id='quickstart-sign-up'  class='btn button1 p-2 m-2'> Sign Up </button> 
+                   <br>
+                   <span class='p-2 decrease text-center'disabled id="quickstart-verify-email"><a  style='color:none; text-decoration: none;'href='#''>Send Email Verification</a></span>
+                   <br>
+                   <span class='p-2 decrease text-center' id="quickstart-password-reset"><a style='color:none; text-decoration: none;' href='#'>Send Password Reset Email</a></span>
+                         <div class="quickstart-user-details-container p-2 m-1 increase">
+                        Sign-in status: <span id="quickstart-sign-in-status">Unknown</span>
+                        <br>
+                      
+                    </div>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          
+            </div>
+        </div>
+        </div>
+    </div>
 
     <div class="container">
         <div class="row">
             <div class="col-md-6" id='firstSection'>
                 <form class='border p-3 mb-3' id='form'>
+                    <div class="form-group ">
+                        <label>Name</label>
+                        <input type='text' id='name' class='form-control' placeholder="Name">
+                    </div>
                     <div class="form-group">
                         <label>Task</label>
-                        <input type='text' class='form-control' id='task' placeholder="Enter Task">
+                        <input type='text' class='form-control' id='task' placeholder="Task To Do " required>
                     </div>
 
                     <div class="form-group">
                         <label>Description</label>
-                        <input type='text' class='form-control' id='description' placeholder="Describe Task">
+                        <input type='text' class='form-control' id='description' placeholder="Describe Task" required>
                     </div>
 
-                    <button type='submit' id='button1' class='btn btn-secondary'> ADD </button> 
-                    <button style='display:none;' type='submit' id='button2' class='btn btn-secondary'> UPDATE </button> 
-                    <button style='display:none' type='submit' id='button3' class='btn btn-secondary'> DELETE </button> 
+                    <button type='submit' id='button1' class='btn btn-secondary'> Add Task </button> 
+                    <button style='display:none;' type='submit' id='button2' class='btn button2 m-2'> UPDATE </button> 
+                    <button style='display:none' type='submit' id='button3' class='btn button2 m-2'> DELETE </button> 
 
 
 
@@ -67,21 +116,10 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 
     <script src='app.js'></script>  
