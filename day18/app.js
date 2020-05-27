@@ -24,7 +24,7 @@ search7.addEventListener('click',getTechnology)
 
 function getBusiness(){
      //search for business news
-     fetch(`https://newsapi.org/v2/top-headlines?country=ng&category=business&pageSize=20&apiKey=2ef1ed45b44142f8961be51bbe656703`)
+     fetch(`http://newsapi.org/v2/top-headlines?country=ng&category=business&pageSize=20&apiKey=2ef1ed45b44142f8961be51bbe656703`)
      .then(function(response){
          return response.json();
      })
