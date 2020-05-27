@@ -265,7 +265,7 @@ function getHealth(){
 function getLatestNews(){
 
    //searchntry=ng&pa for random news
-    fetch(`http://newsapi.org/v2/top-headlines?country=ng&pageSize=15&apiKey=2ef1ed45b44142f8961be51bbe656703`)
+    fetch(`https://newsapi.org/v2/top-headlines?country=ng&pageSize=15&apiKey=2ef1ed45b44142f8961be51bbe656703`)
     .then(function(response){
         return response.json();
     })
