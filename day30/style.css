@@ -1,0 +1,228 @@
+body{
+    margin:0px;
+    padding:0px;
+    font-family: 'Source Serif Pro', serif ;
+    
+}
+.imageBg{
+   width:100%;
+   height:200px;
+   
+}
+.header{
+     width:100%;
+     height:200px;
+     margin:0px;
+     padding: 0px;
+     background-color: #1e98b0;
+}
+
+.mainContent{
+    margin:30px auto;
+}
+.box{
+    background-image: linear-gradient(to right,#e6faff,#74e8ff) !important;
+}
+
+.globalDiv{
+    
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-gap: 4em;
+    padding: 10px;
+    height: 250px;
+    /* background-color: transparent !important; */
+   
+
+    width: 85%;
+    margin: 0px auto;
+}
+.globalDiv div{
+    
+    background-color: #021e39;
+    border-radius: 15px;
+    color: #25bcc5;
+}
+.CasesHeader1{
+    color:#021e39;
+}
+.CasesHeader1 h2{
+       text-align: center;
+}
+.CasesHeader1 h5{
+    color:white;
+    float: right;
+    /* border: 2px solid white; */
+    padding: 5px;
+    background-color: #021e39;
+    border-radius: 10px;
+}
+.Cases{
+    font-size: 30px;
+    margin-left: 30px; 
+}
+.casesBody{
+    font-size: 50px;
+    text-align: center;
+    font-weight: 800;
+  
+    color: white;
+    text-shadow: 3px 3px black,3px 3px black,3px 3px black,3px 3px black;
+}
+.removeBackground{
+    padding:20px;
+    margin:30px 0px;
+    background-color: transparent !important;
+}
+.searchState{
+
+    margin: 100px;
+    padding: 5px;
+    color: #021e39;
+}
+.searchHeader{
+    
+}
+.searchState label{
+
+    font-style: italic;
+    font-weight: bold;
+}
+.searchState input{
+
+    width: 85%;
+    border-top: transparent;
+    border-left: transparent;
+    border-bottom: 1px solid #021e39;
+    background: transparent;
+    border-right: transparent;
+}
+.searchState button{
+    
+    padding: 5px;
+    border: none;
+    background-color: #021e39;
+    color: cyan;
+}
+.searchState button:hover{
+    transform:scale(1.05);
+}
+
+.error{
+    text-align: center;
+    font-style: italic;
+    color:red;
+}
+ /* loaders */
+#loader {
+    text-align: center;
+    margin:30px auto;
+    font-size:20px;
+    font-weight: 600;
+    letter-spacing: 10px;
+    color:gold;
+    text-shadow: 1px 1px black, 1px 1px black, 1px 1px black, 1px 1px black, 1px 1px black;
+  }
+
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+@media only screen and (min-width:100px) and (max-width:399px){
+     
+    .globalDiv{
+    
+        display: block;
+      width:100%;
+        padding: 10px;
+        height: 500px;
+        /* background-color: transparent !important; */
+    }
+    .globalDiv div{
+          margin:5px auto;
+        background-color: #134779;
+    }
+    .mainContent{
+    margin:50px auto;
+}
+.box{
+    background-image: linear-gradient(to right,#e6faff,#74e8ff) !important;
+}
+
+
+.CasesHeader1{
+    color:#021e39;
+    padding:0px 5px;
+}
+.CasesHeader1 h2{
+       text-align: center;
+    font-size: 15px;
+    margin:10px
+}
+.CasesHeader1 h5{
+    color:white;
+    float: right;
+    /* border: 2px solid white; */
+    padding: 4px;
+    background-color: #021e39;
+    border-radius: 10px;
+    font-size: 15px;
+    
+}
+.Cases{
+    font-size: 15px;
+    margin-left:3px; 
+}
+.casesBody{
+    font-size: 25px;
+    text-align: center;
+    font-weight: 800;
+  
+    color: white;
+    text-shadow: 3px 3px black,3px 3px black,3px 3px black,3px 3px black;
+}
+.removeBackground{
+    width:101%;
+    padding:20px;
+    margin:10px 0px;
+    background-color: transparent !important;
+}
+.searchState{
+
+    margin: 0px auto;
+    padding: 5px;
+    color: #021e39;
+    font-size: 15px !important;
+}
+.searchHeader h4{
+    font-size: 17px
+  
+}
+.searchState label{
+
+    font-style: italic;
+    font-weight: bold;
+}
+.searchState input{
+
+    width: 70%;
+    border-top: transparent;
+    border-left: transparent;
+    border-bottom: 1px solid #021e39;
+    background: transparent;
+    border-right: transparent;
+}
+.searchState button{
+    border-radius: 5px;
+    padding: 3px;
+    border: none;
+    background-color: #021e39;
+    color: cyan;
+}
+
+}

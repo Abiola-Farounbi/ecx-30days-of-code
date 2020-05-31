@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid'19 Tracker</title>
+    <link rel='stylesheet' href='style.css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+   <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet"> 
+   <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+  <div class="header">
+    <img class='imageBg'src='2.jpg' alt='image background of covid19 '>
+  </div>
+  <div class=' box'>
+      <div class="row" style='margin:0px !important'>
+      <div class="col-md-12">
+
+
+      <div class="mainContent">
+        <div class='card-title CasesHeader1'>
+          <p> <h5><a href='covid19Facts.html'>Facts On COVID'19</a> </h5></p>
+          <br>
+         <h2> COVID'19  Cases Around The World </h2>
+         <hr style="background-color:#021e39;">
+        </div>
+             <div class='globalDiv'>
+               
+            <div>
+              <div class="card-body">
+                 <span class='Cases'> Total Cases</span>
+            </div>
+            <div class="card-body">
+              <span id='totalCases' class='casesBody'> </span>
+         </div>
+            </div>
+            <div>
+              <div class="card-body">
+                 <span class='Cases'>Total Recovered</span>
+            </div>
+            <div class="card-body">
+              <span id='totalRecovered' class='casesBody'></span>
+         </div>
+            </div>
+            <div>
+              <div class="card-body">
+                 <span class='Cases'>Total Deaths</span>
+            </div>
+            <div class="card-body">
+              <span id='totalDeaths' class='casesBody'></span>
+         </div>
+            </div>
+          
+           </div>
+
+
+           <div class="card removeBackground ">
+            <div class='card-title CasesHeader1'>
+             <h2> COVID'19 Cases In Nigeria </h2>
+             <hr style="background-color:#021e39;">
+            </div>
+                 <div class='globalDiv'>
+                   
+                <div>
+                  <div class="card-body">
+                     <span class='Cases'> Total Cases</span>
+                </div>
+                <div class="card-body">
+                  <span id='totalCases2' class='casesBody'></span>
+             </div>
+                </div>
+                <div>
+                  <div class="card-body">
+                     <span class='Cases'>Total Recovered</span>
+                </div>
+                <div class="card-body">
+                  <span id='totalRecovered2' class='casesBody'></span>
+             </div>
+                </div>
+                <div>
+                  <div class="card-body">
+                     <span class='Cases'>Total Deaths</span>
+                </div>
+                <div class="card-body">
+                  <span id='totalDeaths2' class='casesBody'></span>
+             </div>
+                </div>
+              
+               </div>
+              
+               <div class='searchState'>
+                <span class='searchHeader'> <h4> COVID'19 Case In Each State</h4></span>
+                <br>
+                 <label >Search for a state</label>
+                 <br>
+                 <input id='searchInput' type='text' >
+                 <button id='searchForState'> Search</button>
+
+               </div>
+               
+               <div id="loader"> Loading ...</div>
+               <div class='output'>
+               </div>
+               <div class='error'>
+
+               </div>
+
+               </div>
+           </div>
+
+       </div>
+       </div>
+     </div>  
+     </div>
+      
+          
+</div>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src='app.js'></script>
+</body>
+</html>
+
+
+
+ 
