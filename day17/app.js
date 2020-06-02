@@ -1,18 +1,22 @@
+// loader
+var spinner= document.querySelector('.loader')
+spinner.style.display="none";
 //button to search the for the lyrics
 var searchButton=document.querySelector('.searchBtn');
 searchButton.addEventListener('click',getLyrics)
 
 // creating a function to fetch the api
 function getLyrics(){
-
+    spinner.style.display="block";
    var lyric=document.querySelector('.searchLyrics').value
    //search for lyrics
     fetch(`https://cors-anywhere.herokuapp.com/https://api.musixmatch.com/ws/1.1/track.search?q_lyrics=${lyric}&page_size=10&page=1&s_track_rating=desc&apikey=c49f4264dfb706cfdf1a348d4d3c6dbf`)
     .then(function(response){
+
         return response.json();
     })
     .then(function(values){
-
+        spinner.style.display="none";
      let trackId=values.message.body.track_list;
    
     
@@ -57,7 +61,8 @@ function getLyrics(){
     })
   
     .catch(function(err){
-        console.log(err)
+        console.log(error)
+      document.querySelector('.error').innerHTML='Error Fetching Source'
     })
 
 
