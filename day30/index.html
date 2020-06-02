@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Covid'19 Tracker</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel='stylesheet' href='bootstrap/css/bootstrap.css'>
     <link rel='stylesheet' href='style.css'>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
    <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet"> 
@@ -95,8 +97,51 @@
                 <br>
                  <label >Search for a state</label>
                  <br>
-                 <input id='searchInput' type='text' >
-                 <button id='searchForState'> Search</button>
+                 <!-- <input id='searchInput' type='text' >
+                 <button id='searchForState'> Search</button> -->
+                    
+                            <div class="dropdown1">
+                              <button class="dropbtn1 "> States In Nigeria <i class='fas fa-caret-down'></i></button>
+                              <div class="dropdown-content1">
+                                <li onclick="searchForState('fct')"> Abuja </li>
+                                <li onclick="searchForState('abia')"> Abia</li>
+                                 <li onclick=" searchForState('adamawa')">Adamawa</li>
+                                 <li onclick="  searchForState('akwaibom')  ">Akwa Ibom</li>
+                                  <li onclick="  searchForState('anambra')  " >  Anambra </li>
+                                   <li onclick="  searchForState('bauchi')  "  >    Bauchi </li>
+                               <li  onclick="  searchForState('bayelsa')  "  >   Bayelsa </li>
+                                <li  onclick="  searchForState('benue')  " >  Benue </li>
+                                <li  onclick="  searchForState('borno')  " >  Borno </li>
+                                 <li  onclick="  searchForState('crossriver')  " > Cross River </li>
+                                 <li   onclick="  searchForState('delta')  " > Delta </li>
+                                 <li  onclick="  searchForState('ebonyi')  " > Ebonyi </li>
+                                 <li  onclick="  searchForState('ebonyi')  " > Edo </li>
+                                 <li  onclick="  searchForState('ekiti')  "> Ekiti </li>
+                                 <li  onclick="  searchForState('enugu')  ">    Enugu </li>
+                                 <li  onclick="  searchForState('gombe')  "> Gombe </li>                
+                                 <li  onclick="  searchForState('imo')  "> Imo </li>
+                                   <li> Jigawa </li>
+                                 <li  onclick="  searchForState('kaduna')  "> Kaduna </li>
+                                 <li  onclick="  searchForState('kano')  " > Kano </li>
+                                 <li  onclick="  searchForState('kastina')  " > Katsina </li> 
+                                 <li  onclick="  searchForState('kebbi')  "> Kebbi </li> 
+                                 <li  onclick="  searchForState('kogi')  "> Kogi </li>
+                                 <li  onclick="  searchForState('kwara')  "> Kwara </li>
+                                 <li  onclick="  searchForState('lagos')  "> Lagos </li>
+                                  <li   onclick="  searchForState('nassarawa')  "> Nassarawa </li>
+                                 <li  onclick="  searchForState('niger')  "> Niger </li>
+                                 <li onclick="  searchForState('ogun')  " >  Ogun </li>
+                                   <li onclick="  searchForState('ondo')  ">  Ondo </li>
+                                   <li onclick="  searchForState('osun')  "> Osun </li>
+                                     <li onclick="  searchForState('oyo')  ">  Oyo </li>   
+                                  <li onclick="  searchForState('plateau')  " >  Plateau</li>
+                                 <li onclick="  searchForState('rivers')  "> Rivers   </li>
+                                   <li onclick="  searchForState('sokoto')  "> Sokoto  </li>
+                                 <li onclick="  searchForState('taraba')  ">  Taraba </li>
+                                 <li onclick="  searchForState('yobe')  "> Yobe </li>
+                                <li onclick="  searchForState('zamfara')  " >   Zamfara </li>
+                              </div>
+                            </div>
 
                </div>
                
@@ -119,6 +164,9 @@
 </div>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src='app.js'></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
 
