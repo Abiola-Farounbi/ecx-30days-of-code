@@ -1,4 +1,5 @@
 //button to search the for the news by category
+var spinner= document.querySelector('.error')
 
 var search1=document.querySelector('.business');
 search1.addEventListener('click',getBusiness)
@@ -284,7 +285,7 @@ function getLatestNews(){
     })
   
     .catch(function(err){
-        console.log(err)
+        spinner.innerHTML=err
     })
 
 
