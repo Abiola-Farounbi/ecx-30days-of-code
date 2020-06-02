@@ -34,7 +34,7 @@ body{
     /* background-color: transparent !important; */
    
 
-    width: 85%;
+    width: 65%;
     margin: 0px auto;
 }
 .globalDiv div{
@@ -103,10 +103,12 @@ body{
     border: none;
     background-color: #021e39;
     color: cyan;
+    width:100%;
 }
 .searchState button:hover{
-    transform:scale(1.05);
+    background-color: rebeccapurple;
 }
+
 
 .error{
     text-align: center;
@@ -133,12 +135,52 @@ body{
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
-@media only screen and (min-width:100px) and (max-width:399px){
+  .dropbtn1 {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown1 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content1 {
+    display: none;
+  
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content1 li {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid black;
+  }
+  
+  .dropdown-content1 li:hover {background-color: #f1f1f1}
+  
+  .dropdown1:hover .dropdown-content1 {
+    display: block;
+  }
+  
+  .dropdown1:hover .dropbtn1 {
+    background-color: black;
+  }
+@media only screen and (min-width:100px) and (max-width:450px){
      
     .globalDiv{
     
         display: block;
-      width:100%;
+      width:65%;
         padding: 10px;
         height: 500px;
         /* background-color: transparent !important; */
