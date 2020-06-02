@@ -52,7 +52,13 @@ body{
     padding:5px;
     display:block;
 }
-
+.loader{
+    margin:50px auto;
+    color:gold;
+    text-shadow: 1px 1px black,1px 1px black,1px 1px black,1px 1px black,1px 1px black,1px 1px black;
+    font-weight: 700;
+    text-align: center;
+}
 @media only screen and (min-width:100px) and (max-width:399px){
 
     .heading{
