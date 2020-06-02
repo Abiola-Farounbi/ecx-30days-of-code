@@ -1,11 +1,15 @@
+// loader
+var spinner= document.querySelector('.loader')
+spinner.style.display="none";
 // creating a function to fetch the api
 function getCountryName(){
+    spinner.style.display="block";
     fetch('https://restcountries.eu/rest/v2/all')
     .then(function(response){
         return response.json();
     })
     .then(function(values){
-    
+    spinner.style.display="none";
     //looping through the array 
     for(var i=0; i<250; i++){
         let html=' ';
