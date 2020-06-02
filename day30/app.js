@@ -1,31 +1,21 @@
 var spinner=  document.getElementById('loader');
 spinner.style.display='none';
-function showLoader() {
-	spinner.style.display='block';
-	
-  }
-  var myVar
-function myFunction() {
-	myVar = setTimeout(showLoader, 3000);
-  }
 
 
- document.getElementById('searchForState').addEventListener('click', searchForState)
+
+//  document.getElementById('searchForState').addEventListener('click', searchForState)
  
- function searchForState(e){
+ function searchForState(statePicked){
 	
-	let searchValue=document.getElementById('searchInput').value;
-	//converting string to lower case
-	searchValue=searchValue.toLowerCase()
-
-	if (searchValue ==  "  " ){
-		console.log('year')
-         swal('Fill in the field')
-	}
+	// let searchValue=document.getElementById('searchInput').value;
+	// //converting string to lower case
+	// searchValue=searchValue.toLowerCase()
 
 
 
-	else{
+
+
+	
 		spinner.style.display='block';
 	
 		var requsetOptions={
@@ -38,8 +28,7 @@ function myFunction() {
 	.then(function(result){
 		spinner.style.display='none';
 		let resultValue=result.data.states;
-
-			
+	
 		var count=0;	
 		 
 		if(true){
@@ -49,8 +38,10 @@ function myFunction() {
 			let display='';
 			var theState=state.state;
 			theState=theState.toLowerCase()
-
-			if(theState == searchValue){
+			
+			
+			
+			if(theState == statePicked){
 			
 				count++
 
@@ -100,7 +91,7 @@ function myFunction() {
 
 
 
- }
+ 
 
 var requsetOptions={
 	method:'GET',
