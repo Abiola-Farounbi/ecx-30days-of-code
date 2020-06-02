@@ -96,6 +96,20 @@ padding:20px;
     font-size: 10px;
     color: grey;
 }
+.loader{
+    margin:50px auto;
+    color:gold;
+    text-shadow: 1px 1px black,1px 1px black,1px 1px black,1px 1px black,1px 1px black,1px 1px black;
+    font-weight: 700;
+    text-align: center;
+}
+.error{
+    margin:50px auto;
+    color:red;
+    text-shadow: 1px 1px black,1px 1px black,1px 1px black,1px 1px black,1px 1px black,1px 1px black;
+    font-weight: 700;
+    text-align: center;
+}
 
 @media only screen and (min-width:100px) and (max-width:399px){
 
