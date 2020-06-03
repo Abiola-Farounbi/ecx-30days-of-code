@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fae's Post </title>
+    <link rel='stylesheet' href='bootstrap/css/bootstrap.css'>
+    <link rel='stylesheet' href='style.css'>
+    <link rel="icon" href="favicon.png"nhtype="image/png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Piedra&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Arapey&family=Crimson+Text:wght@600&display=swap" rel="stylesheet">
+
+        
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-firestore.js"></script>
+
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script> 
+
+</head>
+<body class='bodyBackground' onload='loader()' >
+    <div class="loading">
+     <img class='loaderPage' src='favicon.png' alt='logo'>
+     <h4 style='color:white;' class='text-center m-3 '> Loading ...</h4>
+      </div>
+    <div class='loaderContent' onload='readPost()' >
+        <div class="bar mb-3">
+            <div class="inner">
+                <!-- <a class='logo'></a> -->
+             <p class='logoName text-center'>   FAE </p>
+            
+                 <nav>
+                     <ul>
+                         <li >
+                          
+                           <button type="button" class='btn btn-secondary button1'  data-toggle="modal" data-target="#locModal">
+                            Sign In 
+                          </button>
+                          </li>
+                     </ul>
+                 </nav>
+      
+            </div>
+        </div>
+     
+        
+       
+            
+          
+            <div class="modal fade" id="locModal" tabindex="-1" role="dialog" aria-labelledby="locModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                 
+                     <div >
+                        <h3 class="modal-title text-center" id="locModalLabel">Sign Up/Login </h3>
+                        <figure><img class='image' src="signup-image.jpg" alt="sing up image"></figure>
+                       </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                   
+                    </div>
+                    <div class="modal-body">
+                    <form id="form">
+                        <div class="form-group m-2 p-1">
+                            <label for="namse"><i class="fas fa-user"></i></label>
+                            <input type="text" name="name" id="namse" class='form-control identity width' placeholder="Display Name" required>
+                        </div> 
+                        <div class="form-group m-2 p-1 ">
+                            <label><i class='fas fa-envelope'></i></label>
+                            <input type='text' id='email' class='form-control width'  placeholder="Email" required>
+                        </div>
+                        <div class="form-group m-2 p-1">
+                            <label><i class='fas fa-lock'></i></label>
+                            <input type='password' class='form-control width'  id='password' placeholder="Password" required>
+                        </div>
+                          <button  id='quickstart-sign-in' disabled  class='btn btn-secondary button1' > SignIn </button> 
+                           <button  id='quickstart-sign-up'   class='btn btn-secondary button1' > Sign Up </button> 
+                    </form>
+                    </div>
+                    <div class="modal-footer">
+                        <div class='form-group'>
+                        <div disabled class='social fontSize3'  id="quickstart-sign-in2">
+                            <a style='color:red;'href="#">Sign up using
+                              <i class="fab fa-google"></i>
+                            </a>
+                          </div>
+                        </div>
+                           
+                           <div class='form-group'>
+                           <span class='p-2 decrease text-center fontSize2'disabled id="quickstart-verify-email"><a  style='color:none; text-decoration: none;'href='#''>Send Email Verification</a></span>
+                           <br>
+                           <span class='p-2 decrease text-center fontSize2' id="quickstart-password-reset"><a style='color:none; text-decoration: none;' href='#'>Send Password Reset Email</a></span>
+                                 <div class="quickstart-user-details-container p-2 m-1 increase fontSize1 fontSize3">
+                                Sign-in status: <span id="quickstart-sign-in-status">Unknown</span>
+                                <br>
+                              
+                            </div>
+                         
+                               </div>
+                               </div>
+                               </div>
+                               </div>
+                   </div>
+          
+                        
+
+                               <div class='card push'>
+                                <div class='card-body'>
+                                         <img class='image4' src='6.png' alt='avatar'>
+                                         <p class="named"></p>
+                                
+                                            What's new today !!!
+                                    <button class="btn btn-secondary button1 m-1"> <a style='color:white;'href='newPost.html' target='_blank'> Add  a new post </a> </button>
+                                    </div>
+                                    
+                                </div>
+                            
+
+
+                            <div class="container" id='cardSection'>
+                               
+                               
+                               
+                            </div>
+                            <div class="hide">
+                                <div class="container bordered2 p-3">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                         <div>
+                                            
+                                             <figure><img class='image2' src="signin-image.jpg" alt="image"> 
+                                                 <h3 class=" text-center" > What's New Today </h3>
+                                             </figure>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                         <form id="w-form">
+                                             <div class="form-group m-2 p-1">
+                                                 <label for="namse"><i class="fas fa-user"></i></label>
+                                                 <input type="text" name="name" id="title" class='form-control identity width' placeholder="Title">
+                                             </div> 
+                                             <div class="form-group m-2 p-1 ">
+                                                 <label><i class='fas fa-envelope'></i></label>
+                                                 <textarea name="text" id='message' class='form-control identity width' maxlength="200" cols="30" rows="10"> My Fisrt Post </textarea>
+                                             </div>
+                                             <div class="form-group m-2 p-1">
+                                                 <label for="namse"><i class="fas fa-user"></i></label>
+                                                 <input type="text" name="name" id="author" class='form-control identity width' placeholder="Created By">
+                                             </div> 
+                                       
+                                               <button id='addPostBtn'   class='btn btn-secondary button1  m-3' > Post </button> 
+                                         </form>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            
+                            
+
+                        <footer class="footer-area">
+                            <div class="container">
+                                <div class="row">
+                                    <p class="col-lg-12 footer-text text-center">
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | made with <i class="fas fa-heart" aria-hidden="true"></i> by <a style=' color:black;' href="https://colorlib.com" target="_blank" >Abiola</a></p>
+                                
+                            </div>
+                            </div>
+                        </footer>
+
+
+                    
+                    </div>
+    <script src='app.js'></script>  
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>    
+</body>
+</html>
