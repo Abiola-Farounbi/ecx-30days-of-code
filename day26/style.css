@@ -37,16 +37,10 @@ left: 0;
 right: 0;
 z-index: 100;
 background-image: linear-gradient(to bottom right, #ff5e9b, #fffbfc);
-/* border-bottom-left-radius: 50% 28%; */
-/* border-bottom-right-radius: 50% 28%; */
-/* clip-path: ellipse(50% 75% at 50% 0% );
--webkit-clip-path: ellipse(50% 75% at 50% 0% ); */
+
 }
 .inner{
-  /*! max-width: 1000px; */
-  /*! margin: 0 auto; */
-  /*! padding: 0 10px; */
-  /*! position: relative; */
+
 
 }
 .logo{
@@ -75,11 +69,11 @@ margin-top: 4px;
 .button1{
 
 color: white;
-background-color: #cc1a76;
+background-color: #cc1a76 !important ;
 border:none;
 }
 .button1:hover{
-  background-color: #c10f3b;  
+  background-color: #c10f3b !important;  
   transform: scale(1.1);
   border:none;
 }
@@ -150,7 +144,7 @@ border: none;
 border-radius: 0px;
     border-bottom-right-radius: 0px;
 border-bottom-right-radius: 80px;
-background-color: #fce4ec;
+background-color: #fce4ec !important;
 }
 #cardSection{
   font-family: 'Crimson Text', serif;
