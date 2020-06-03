@@ -3,7 +3,7 @@ document.querySelector('.loaderContent').style.display='none';
 // preloader
 var loaders;
 function loader(){
-    loaders=setTimeout(showPage,1000)
+    loaders=setTimeout(showPage,3000)
 }
 function showPage(){
     document.querySelector('.loading').style.display='none';
