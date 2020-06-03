@@ -142,8 +142,8 @@ margin-bottom: 0px;
 width: 20%;
 border: none;
 border-radius: 0px;
-    border-bottom-right-radius: 0px;
-border-bottom-right-radius: 80px;
+    border-bottom-right-radius: 0px !important;
+border-bottom-right-radius: 80px !important;
 background-color: #fce4ec !important;
 }
 #cardSection{
