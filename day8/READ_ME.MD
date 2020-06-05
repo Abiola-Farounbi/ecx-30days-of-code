@@ -1,4 +1,5 @@
 link to demo -[tic-tac-toe game](https://abiola-farounbi.github.io/day8/)
+
 Day 8
 ============
 ##### Building a simple Tic Tac Toe game
