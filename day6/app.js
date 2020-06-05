@@ -38,6 +38,17 @@ function getNote() {
   link.className = 'remove';
   link.innerHTML = '  <button class="remove">  <i class="fas fa-trash"></i> </button> ';
   div.appendChild(link);
+  const time = document.createElement('span');
+  time.className = 'time';
+  var date=new Date();
+  var month=date.getMonth();
+var day=date.getDate();
+var months=["January",'February',"March","April","May","June",'July', 'August','September','October',"November","December"];
+var month_1=months[month];
+ timeString= ` written ---- ${day},   ${month_1}`
+ timedString=timeString.toString()
+  time.innerHTML = `${timedString}`;
+  div.appendChild(time);
   noteList.appendChild(div);
  
   });
@@ -61,6 +72,18 @@ function addNote(e) {
       link.className = 'remove';
       link.innerHTML = '  <button class="remove">  <i class="fas fa-trash" ></i> </button> <hr>';
       div.appendChild(link);
+      const time = document.createElement('span');
+      time.className = 'time';
+      var date=new Date();
+      var month=date.getMonth();
+    var day=date.getDate();
+    var months=["January",'February',"March","April","May","June",'July', 'August','September','October',"November","December"];
+    var month_1=months[month];
+    console.log(typeof month_1.toString())
+    timeString= ` written ---- ${day},   ${month_1}`
+    timedString=timeString.toString()
+     time.innerHTML = `${timedString}`;
+      div.appendChild(time);
       noteList.appendChild(div);
 
   storeNoteInLocalStorage(words.value);
@@ -119,12 +142,8 @@ function removeNote(e) {
 
 
   function removeNoteFromLocalStorage(Item) {
-      let notess;
-    if(localStorage.getItem('notes') === null){
-      notes = [];
-    } else {
-      notes = JSON.parse(localStorage.getItem('notes'));
-    }
+      let notes = JSON.parse(localStorage.getItem('notes'));
+    
 
   
 
@@ -135,6 +154,10 @@ function removeNote(e) {
     });
   
     localStorage.setItem('notes', JSON.stringify(notes));
+
+
+
+   
 
   }
   
