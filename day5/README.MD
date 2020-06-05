@@ -1,4 +1,4 @@
-#### link to demo - [Todo List]([https://abiola-farounbi.github.io/day5/)
+#### link to demo - [TodoList]([https://abiola-farounbi.github.io/day5/)
 
 Day 5
 ============
