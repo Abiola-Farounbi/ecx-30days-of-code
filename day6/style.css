@@ -1,7 +1,7 @@
 body{
     margin: 0 !important;
     padding: 0;
-  background-color: #b388ff;
+  background-color: azure;
     color: black; 
    }
    .container{
@@ -31,6 +31,7 @@ body{
         color: #370560;
         margin-bottom: 5px;
         margin-top: 5px;
+        text-align: center;
     }
     .card input{
         width:100%;
@@ -40,17 +41,18 @@ body{
     }
     .textArea{
         display:block;
-        width:100%;
         box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
         border:2px solid white;
         color:black;
+        width: 100%;
+        margin: 0px auto;
     }
     .card input:hover{
         background-color: #370560 ;
         color: white;
     }
    .text_1{
-       width:30%;
+       width:35%;
     margin: 40px auto;
     position: relative;    
      border-radius: 30px;
@@ -91,6 +93,7 @@ body{
    color:#ea80fc;
     float: right;
     border: none;
+    margin-top: 140px;
 }
 .check{
     background-color:#6200ea;
@@ -98,6 +101,7 @@ body{
   
     border: none;
     float:right;
+    margin-top: 140px;
 }
 .collection{
         display:block;
@@ -119,6 +123,7 @@ border-radius: 5px;
 
 margin-top: 30px;
     color:black;
+    overflow: auto;
 }
 .collection-item{
     
@@ -136,7 +141,7 @@ margin-top: 30px;
     background-color:#4527a0;
     color:white;
     display:block;
-    float:left;
+    float:right;
 }
 .btn2{
     border:none;
@@ -148,6 +153,10 @@ margin-top: 30px;
     color:white;
     display:block;
     float:right;
+}
+.time{
+    float:left;
+    margin-top: 250px;
 }
 
 
@@ -169,5 +178,8 @@ margin-top: 30px;
         margin-top: 20px !important;
         font-size:9px;
     }
-
+     .time{
+         float:right;
+         margin-top: 279px;
+     }
 }
