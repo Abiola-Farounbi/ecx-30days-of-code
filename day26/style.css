@@ -122,8 +122,8 @@ height:150px;
    height: 200px;
 }
 .image4{
-  width:200px;
-  height:200px;
+  width:150px;
+  height:150px;
   border-radius: 50%;
   
 }
@@ -160,14 +160,14 @@ background-color: #fce4ec !important;
   display: inline-block;
   border: 1px solid #ff2f92;
   line-height: 28px;
-  padding: 0px 20px;
+  padding: 0px 10px;
   color: #777777;
   border-radius: 15px;
   font-size: 12px;
   font-family: "Roboto", sans-serif;
   margin-bottom: 20px;
   font-weight: 500;
- width:15%;
+ width:40%;
 }
 .shadow{
   filter: drop-shadow(2px 2px 5px rgba(192,72,25,0.32));
@@ -202,7 +202,7 @@ background-color: #fce4ec !important;
 @media only screen and (min-width:100px) and (max-width:399px){
 .push{
   margin:100px 0px;
-  width:75%;
+  width:60%;
 }
 .bordered2{
   margin: 150px auto;
