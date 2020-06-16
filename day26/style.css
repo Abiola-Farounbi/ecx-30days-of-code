@@ -72,6 +72,13 @@ color: white;
 background-color: #cc1a76 !important ;
 border:none;
 }
+.button7{
+
+  color: white;
+  background-color: black !important ;
+  border:none;
+
+  }
 .button1:hover{
   background-color: #c10f3b !important;  
   transform: scale(1.1);
