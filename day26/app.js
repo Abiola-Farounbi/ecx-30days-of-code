@@ -72,7 +72,7 @@ firebase.auth().onAuthStateChanged(firebaseUser => {
           let db=firebase.firestore().collection('articles/');
           db.add(article)
           .then(function(){
-              swal('Good Job', 'task added', 'sucess')
+              swal('Saved🥳')
               document.getElementById('cardSection').innerHTML=' ';
               readPost();
           })
